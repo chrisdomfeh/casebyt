@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Case'd by T — Phone Cases, Made to Last</title>
+    <title>About — Case'd by T</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('cbt-theme')||'light')}catch(e){}</script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
     <script src="script.js" defer></script>
-    <script src="showcase3d.js" defer></script>
 </head>
 
 <body>
@@ -25,10 +23,10 @@
     <header class="site-header">
         <div class="site-header__bar">
             <nav class="main-nav">
-                <a href="index.html" class="underline-fade is-active">Home</a>
+                <a href="index.html" class="underline-fade">Home</a>
                 <a href="collection.html" class="underline-fade">Shop</a>
                 <a href="contact.html" class="underline-fade">Contact</a>
-                <a href="about.html" class="underline-fade">About</a>
+                <a href="about.html" class="underline-fade is-active">About</a>
             </nav>
             <button id="menu-btn" class="menu-btn icon-btn" aria-label="Menu" aria-expanded="false">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
@@ -63,42 +61,26 @@
         </div>
     </header>
 
-    <!-- HERO -->
-    <section id="home" class="hero">
-        <p class="reveal hero__eyebrow">HANDFINISHED PHONE CASES</p>
-        <img src="assets/logo.svg" alt="Case'd by T" class="reveal hero__logo">
-        <p class="reveal hero__copy">Slim protection, real materials, and a finish that ages well. Built for the phone you actually carry.</p>
-        <a href="collection.html" class="reveal btn-primary">Shop the Collection</a>
-        <a href="#showcase" class="hero__scroll icon-btn" aria-label="Scroll">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v16M6 14l6 6 6-6" /></svg>
-        </a>
+    <section class="about-page">
+        <h1 class="reveal">About Case'd by T</h1>
+        <p class="about-page__intro reveal">Slim protection, real materials, and a finish that ages well. Built for the phone you actually carry.</p>
     </section>
 
-    <!-- SECOND SCREEN: text on the left, 3D phone case on the right -->
-    <section id="showcase" class="showcase">
-        <div class="showcase__copy">
-            <p class="showcase__eyebrow fade-up" style="--i:0">THE SIGNATURE CASE</p>
-            <h2 class="showcase__title" aria-label="Your phone, built to protect, stand out, last.">
-                <span class="line"><span class="line__in" style="--i:0">Your phone,</span></span>
-                <span class="line"><span class="line__in" style="--i:1">built to</span></span>
-                <span class="line"><span class="line__in" style="--i:2">
-                    <span class="rotator" aria-hidden="true"><span>protect.</span><span>stand out.</span><span>last.</span></span>
-                </span></span>
-            </h2>
-            <p class="showcase__text fade-up" style="--i:3">Slim protection, real materials, and prints that look as good on day 300 as on day one. Grab it, spin it, see every angle.</p>
-            <div class="showcase__stats fade-up" style="--i:4">
-                <div><strong data-count="2" data-suffix="m">0</strong><span>Drop tested</span></div>
-                <div><strong data-count="48" data-suffix="h">0</strong><span>Ships in</span></div>
-                <div><strong data-count="6">0</strong><span>Finishes</span></div>
-            </div>
-            <div class="showcase__cta fade-up" style="--i:5">
-                <a href="collection.html" class="btn-primary">Shop the Collection</a>
-                <a href="about.html" class="showcase__link underline-fade">Our story</a>
-            </div>
+    <section class="values">
+        <div class="values__item reveal">
+            <svg class="icon icon--sm values__icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" /></svg>
+            <h3>Real drop protection</h3>
+            <p>Reinforced corners and a shock-dispersing inner shell, tested from 2m.</p>
         </div>
-
-        <div id="phone-showcase" class="showcase__stage">
-            <p class="showcase__hint">Drag to rotate</p>
+        <div class="values__item reveal">
+            <svg class="icon icon--sm values__icon" viewBox="0 0 24 24"><path d="M4 8l8-5 8 5v8l-8 5-8-5V8z" /></svg>
+            <h3>Materials that age well</h3>
+            <p>Vegetable-tanned leather and matte bio-resin, sourced and finished by hand.</p>
+        </div>
+        <div class="values__item reveal">
+            <svg class="icon icon--sm values__icon" viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4" /></svg>
+            <h3>Ships in 2 days</h3>
+            <p>Made in small batches, packed flat, and out the door within 48 hours.</p>
         </div>
     </section>
 
